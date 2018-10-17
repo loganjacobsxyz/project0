@@ -1,0 +1,56 @@
+body{
+ font-family: monospace, arial;
+}
+
+h1 {
+  color: #000;
+}
+
+h2 {
+  color: #999;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14;
+}
+
+#top {
+  margin: auto;
+  text-align: center;
+}
+
+#main {
+  margin: auto;
+  padding: 0 auto;
+  width: 80%;
+}
+
+#left {
+  float: left;
+  align: center;
+  margin: 20px;
+}
+
+#right {
+  float: right;
+  align: center;
+  margin: 20px;
+}
+
+img {
+  border: 1px solid #000;
+}
+
+
+
+ /* @media use */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
