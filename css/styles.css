@@ -1,16 +1,40 @@
 body{
- font-family: monospace, arial;
+ font-family: monospace, arial !important;
+}
+
+#nav {
+  margin: auto;
+}
+
+a.nav-link, a.btn, a.btn-primary {
+  background: #67cab0;
+  border: 0px;
+}
+
+a:link, a:visited, a:active {
+  color: white;
+  font-weight: bold;
+}
+
+a.nav-link:hover {
+  color: white;
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+.jumbotron {
+  color: white;
+  background-color: #ffdb6a !important;
 }
 
 h1 {
-  color: #000;
+  font-size: 48px !important;
 }
 
 h2 {
-  color: #999;
-}
-
-h3 {
+  font-size: 24px !important;
   text-transform: uppercase;
 }
 
@@ -18,32 +42,46 @@ p {
   font-size: 14;
 }
 
-#top {
-  margin: auto;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container > div {
-  margin: auto;
-  padding: 0;
-  width: 600px;
-}
-
 img {
-  border: 1px solid #000;
+  width: 90%;
+  padding: 10px;
 }
 
+.nerd, .rockstar {
+  width: 500px;
+  margin: 20px;
+}
 
+table {
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+
+td {
+  padding: 10px;
+}
+
+.footer {
+  color: grey;
+  font-size: 9px;
+  padding: 40px;
+}
 
  /* @media use */
 
 @media print {
     .screen-only {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+      width: 70%;
+      min-width: 300px;
+    }
+    .nerd, .rockstar {
+      padding-left: 40px;
     }
 }

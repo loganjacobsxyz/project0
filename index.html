@@ -4,53 +4,107 @@
     <meta charset="utf-8">
     <title>Nerd vs. Rockstar</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/variables.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="variables/variables.css"> -->
   </head>
   <body>
 
-    <div id="top">
+  <div class="container h-100">
 
-      <h1>So you wanne be a nerd or a rockstar?</h1>
-      <h2>Because you probably can't be both...</h2>
+      <div class="container navbar">
 
-    </div>
+        <ul class="nav" id="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link btn btn-primary" role="button">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="nerds.html" class="nav-link btn btn-primary" role="button">Nerds</a>
+          </li>
+          <li class="nav-item">
+            <a href="rockstars.html" class="nav-link btn btn-primary" role="button">Rockstars</a>
+          </li>
+          <li class="nav-item">
+            <a href="summary.html" class="nav-link btn btn-primary" role="button">Summary</a>
+          </li>
+        </ul>
 
-    <div class="container">
+      </div>
 
-        <div>
-          <img src="images/nerd.jpg" class="center" alt="Nerd pic">
+    <!-- BEGIN CONTENT -->
+
+        <div class="jumbotron">
+
+          <h1>Wanne be a <strong>nerd</strong> or a <strong>rockstar</strong>?</h1>
           <br>
-          <h3>Nerd</h3>
-          <ol>
-            <li>Handsome</li>
-            <li>Intelligent</li>
-            <li>Skills</li>
-            <ul>
-              <li>Computers</li>
-              <li>Dungeons & Dragons</li>
-            </ul>
-          </ol>
+          <h2>Because you probably can't be both...</h2>
+
         </div>
 
-        <div>
-          <img src="images/rockstar.jpg" class="center" alt="Rockstart pic">
-          <br>
-          <h3>Rockstar</h3>
-          <ol>
-            <li>Sexy</li>
-            <li>Confident</li>
-            <li>Skills</li>
-            <ul>
-              <li>Guitars</li>
-              <li>Beer</li>
-            </ul>
-          </ol>
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12 mx-auto">
+              <img src="images/nerd.jpg" class="rounded-circle d-block mx-auto" alt="Nerd pic">
+              <div class="nerd">
+                <h3>Nerd</h3>
+                <ol>
+                  <li>Handsome</li>
+                  <li>Intelligent</li>
+                  <li>Skills</li>
+                  <ul>
+                    <li>Computers</li>
+                    <li>Dungeons & Dragons</li>
+                  </ul>
+                </ol>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 mx-auto">
+              <img src="images/rockstar.jpg" class="rounded-circle d-block mx-auto" alt="Rockstar pic">
+              <div class="rockstar">
+                <h3>Rockstar</h3>
+                <ol>
+                  <li>Sexy</li>
+                  <li>Confident</li>
+                  <li>Skills</li>
+                  <ul>
+                    <li>Guitars</li>
+                    <li>Beer</li>
+                  </ul>
+                </ol>
+              </div>
+            </div>
+
         </div>
 
-    </div>
+        <div class="row">
 
-    <p class="screen-only">This is the section that should not print.</p>
+              <div class="container navbar">
 
+                <ul class="nav" id="nav">
+                  <!-- <li class="nav-item">
+                    <a href="index.html" class="nav-link btn btn-primary" role="button">Go back</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a href="nerds.html" class="nav-link btn btn-primary" role="button">Learn more</a>
+                  </li>
+                </ul>
+
+              </div>
+
+        </div>
+
+
+    <!-- END CONTENT -->
+
+      <div class="footer">
+
+        <p class="screen-only text-center">This is some fine print nobody ever reads and it doesn't show up when printed because of @media.</p>
+
+      </div>
+
+  </div>
 
   </body>
 </html>
